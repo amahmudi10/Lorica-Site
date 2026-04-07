@@ -3,7 +3,7 @@
 Public marketing website for Lorica — a rugged wearable wrist device that enables hands-free voice control via the user's smartphone.
 
 **Live URL:** hosted on GitHub Pages (main branch, root folder)  
-**Repo:** public, separate from the private Lorica hardware/firmware repo at `C:\dev\Lorica`
+**Repo:** public, separate from the private Lorica hardware/firmware repo (kept locally)
 
 ---
 
@@ -48,10 +48,10 @@ No build step. No framework. Pure HTML/CSS/JS.
 
 ## Third-Party Integrations
 
-| Service | ID / Endpoint | Purpose |
-|---------|--------------|---------|
-| Google Analytics 4 | `G-K3F2VCWHW0` | Page views, event tracking |
-| Formspree | `xeepnkkz` | Email capture (both pages, 4 forms total) |
+| Service | Purpose |
+|---------|---------|
+| Google Analytics 4 (`G-K3F2VCWHW0`) | Page views, event tracking |
+| Formspree | Email capture (both pages, 4 forms total) — form ID in your Formspree dashboard |
 
 GA snippet is inline in each HTML file's `<head>`. tracking.js is loaded at the end of `<body>` on both pages.
 
@@ -59,7 +59,7 @@ GA snippet is inline in each HTML file's `<head>`. tracking.js is loaded at the 
 
 ## tracking.js — What It Tracks
 
-**Email forms (Formspree `xeepnkkz`):**
+**Email forms (Formspree — form ID in your Formspree dashboard):**
 - `hero` — index.html hero button
 - `footer` — index.html footer CTA
 - `business-hero` — business.html hero button
