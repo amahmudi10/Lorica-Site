@@ -1,5 +1,34 @@
 // Lorica — GA4 event tracking
 
+// ── Early access email form ────────────────────────────────
+var form = document.getElementById('early-access-form');
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = form.querySelector('input[type="email"]').value;
+
+    // TODO: replace with your Formspree endpoint — https://formspree.io/f/YOUR_ID
+    fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email })
+    })
+    .then(function(res) {
+      if (res.ok) {
+        form.style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+        gtag('event', 'email_signup', { page: window.location.pathname });
+      } else {
+        alert('Something went wrong — please try again.');
+      }
+    })
+    .catch(function() {
+      alert('Something went wrong — please try again.');
+    });
+  });
+}
+
+
 // ── Button clicks ──────────────────────────────────────────
 document.querySelectorAll('a.btn-primary, a.btn-outline').forEach(function(btn) {
   btn.addEventListener('click', function() {

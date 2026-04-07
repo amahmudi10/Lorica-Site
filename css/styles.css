@@ -98,6 +98,42 @@ body {
   margin-top: 12px;
 }
 
+/* ── EMAIL FORM ───────────────────────────────────────────── */
+.email-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.email-form input[type="email"] {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 1.5px solid #ddd;
+  outline: none;
+  width: 260px;
+  transition: border-color 0.2s;
+}
+
+.email-form input[type="email"]:focus {
+  border-color: #111;
+}
+
+.email-form input[type="email"]::placeholder {
+  color: #aaa;
+}
+
+.form-success {
+  display: none;
+  font-size: 15px;
+  color: #111;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
 .hero-image {
   margin-top: 48px;
   display: flex;
