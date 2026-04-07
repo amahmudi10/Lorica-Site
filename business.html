@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lorica for Business</title>
+  <meta name="description" content="Lorica keeps your workforce connected and hands free. Voice-controlled, phone-powered, built for the job site." />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3F2VCWHW0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K3F2VCWHW0');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ── NAV ──────────────────────────────────────────────── */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .nav-logo {
+      font-size: 18px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #111;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: #111; }
+
+    /* ── BUSINESS HERO ────────────────────────────────────── */
+    .biz-hero {
+      text-align: center;
+      padding: 80px 24px 60px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .biz-hero .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 24px;
+    }
+
+    .biz-hero h1 {
+      font-size: clamp(38px, 7vw, 62px);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .biz-hero h1 .highlight { color: #5a9fad; }
+
+    .biz-hero p {
+      font-size: 17px;
+      color: #555;
+      max-width: 560px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    /* ── PROBLEM STRIP ────────────────────────────────────── */
+    .problem {
+      background: #f7f7f7;
+      padding: 56px 24px;
+      text-align: center;
+    }
+
+    .problem p {
+      font-size: 20px;
+      font-weight: 600;
+      color: #111;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .problem span { color: #5a9fad; }
+
+    /* ── BENEFITS ─────────────────────────────────────────── */
+    .benefits {
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    /* reuse .cards / .card from styles.css */
+
+    /* ── INDUSTRIES ───────────────────────────────────────── */
+    .industries {
+      background: #0f1117;
+      color: #fff;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .industries .section-title { color: #fff; }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .industry-card {
+      background: #1e2230;
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+
+    .industry-card .card-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+
+    .industry-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .industry-card p {
+      font-size: 14px;
+      color: #9aa0b0;
+      line-height: 1.6;
+    }
+
+    /* ── HOW IT HELPS ─────────────────────────────────────── */
+    .how-biz {
+      padding: 80px 24px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .how-biz .section-title { text-align: center; }
+
+    /* reuse .steps / .step from styles.css */
+
+    /* ── BIZ CTA ──────────────────────────────────────────── */
+    .biz-cta {
+      background: #0f1117;
+      color: #fff;
+      padding: 80px 24px;
+      text-align: center;
+      border-top: 1px solid #1e2230;
+    }
+
+    .biz-cta h2 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      max-width: 520px;
+      margin: 0 auto 16px;
+      line-height: 1.2;
+    }
+
+    .biz-cta p {
+      font-size: 15px;
+      color: #9aa0b0;
+      max-width: 480px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Lorica</a>
+    <a href="index.html" class="nav-link">← Back to main site</a>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="biz-hero">
+    <p class="hero-eyebrow">Lorica for Business</p>
+    <h1>Your team's hands are<br><span class="highlight">too valuable</span><br>to hold a phone.</h1>
+    <p>Lorica keeps your workforce connected, informed, and in control — without stopping what they're doing. Voice-controlled, phone-powered, built for the job.</p>
+    <a href="#contact" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <!-- ── PROBLEM ── -->
+  <section class="problem">
+    <p>Every time a worker pulls out their phone, they lose focus, slow down, or create a safety risk. <span>Lorica eliminates that friction entirely.</span></p>
+  </section>
+
+  <!-- ── BENEFITS ── -->
+  <section class="benefits">
+    <h2 class="section-title">What it does for your team</h2>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Faster Decisions</h3>
+        <p>Workers get instant answers through voice — no stopping, no unlocking, no typing. Information flows without breaking workflow.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Break Language Barriers</h3>
+        <p>Live two-way translation on the wrist. Multilingual teams and international job sites communicate clearly without a translator in the room.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🦺</div>
+        <h3>Safer on Site</h3>
+        <p>Hands stay on the job. Whether operating machinery, climbing, or carrying — workers stay connected without compromising safety.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔋</div>
+        <h3>2-Week Battery</h3>
+        <p>No charging rotation, no dead devices mid-shift. Lorica runs for two weeks on a single charge — one less thing to manage.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Works with Existing Phones</h3>
+        <p>No new infrastructure. Lorica pairs with the smartphones your team already carries — it just makes them hands free.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Built Tough</h3>
+        <p>Engineered for real working conditions. Drops, weather, dust — Lorica is designed to survive the environments your team works in.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── INDUSTRIES ── -->
+  <section class="industries">
+    <h2 class="section-title">Built for the field</h2>
+    <div class="industry-grid">
+
+      <div class="industry-card">
+        <div class="card-icon">🏗️</div>
+        <h3>Construction</h3>
+        <p>Coordinate across a loud, busy site without stopping work. Voice commands for updates, instructions, and safety checks.</p>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-icon">🚚</div>
+        <h3>Logistics & Warehousing</h3>
+        <p>Hands-free navigation, inventory lookups, and dispatch updates. Faster fulfilment, fewer errors.</p>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-icon">🏥</div>
+        <h3>Healthcare</h3>
+        <p>Access patient info, set reminders, and communicate with staff — without touching a screen in a clinical environment.</p>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-icon">🔧</div>
+        <h3>Field Service</h3>
+        <p>Technicians get real-time support and documentation hands free while both hands stay on the repair.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section class="how-biz">
+    <h2 class="section-title">How it works</h2>
+    <div class="steps">
+
+      <div class="step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h3>Worker speaks</h3>
+          <p>A question, a command, a translation request — spoken naturally into Lorica on their wrist.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h3>Phone processes it</h3>
+          <p>Lorica sends the request to the worker's phone. Voice commands, AI responses, and translations all run there — no cloud required.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h3>Answer comes back instantly</h3>
+          <p>Audio response through Lorica's speaker. The worker never had to stop, look down, or take off a glove.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="biz-cta" id="contact">
+    <h2>Interested in Lorica for your team?</h2>
+    <p>We're working with early partners ahead of launch. If you want to explore what Lorica could do for your workforce, get in touch.</p>
+    <a href="mailto:hello@lorica.com" class="btn-outline">Contact Us</a>
+  </section>
+
+</body>
+</html>
