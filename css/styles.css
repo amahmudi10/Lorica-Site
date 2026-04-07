@@ -134,6 +134,26 @@ body {
   margin-bottom: 12px;
 }
 
+/* dark background variant */
+.email-form--dark input[type="email"] {
+  background: transparent;
+  border-color: rgba(255,255,255,0.3);
+  color: #fff;
+}
+
+.email-form--dark input[type="email"]::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.email-form--dark input[type="email"]:focus {
+  border-color: #fff;
+}
+
+.cta .form-success,
+.biz-cta .form-success {
+  color: #fff;
+}
+
 .hero-image {
   margin-top: 48px;
   display: flex;

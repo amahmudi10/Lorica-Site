@@ -198,7 +198,14 @@
     <p class="hero-eyebrow">Lorica for Business</p>
     <h1>Your team's hands are<br><span class="highlight">too valuable</span><br>to hold a phone.</h1>
     <p>Lorica keeps your workforce connected, informed, and in control — without stopping what they're doing. Voice-controlled, phone-powered, built for the job.</p>
-    <a href="#contact" class="btn-primary">Get in Touch</a>
+    <button class="btn-primary" id="biz-hero-cta-btn">Get in Touch</button>
+    <div id="biz-hero-form-wrap" style="display:none;">
+      <p class="form-success" id="biz-hero-form-success">Thanks — we'll be in touch.</p>
+      <form class="email-form" id="biz-hero-form">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
   </section>
 
   <!-- ── PROBLEM ── -->
@@ -318,7 +325,14 @@
   <section class="biz-cta" id="contact">
     <h2>Interested in Lorica for your team?</h2>
     <p>We're working with early partners ahead of launch. If you want to explore what Lorica could do for your workforce, get in touch.</p>
-    <a href="mailto:hello@lorica.com" class="btn-outline">Contact Us</a>
+    <button class="btn-outline" id="biz-cta-btn">Contact Us</button>
+    <div id="biz-cta-form-wrap" style="display:none;">
+      <p class="form-success" id="biz-cta-form-success">Thanks — we'll be in touch.</p>
+      <form class="email-form email-form--dark" id="biz-cta-form">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn-outline">Send</button>
+      </form>
+    </div>
   </section>
 
   <script src="js/tracking.js"></script>
