@@ -1,0 +1,279 @@
+/* ── RESET ────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── BASE ─────────────────────────────────────────────────── */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* ── BUTTONS ──────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #333;
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 999px;
+  border: 1.5px solid #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #111;
+}
+
+/* ── SHARED ───────────────────────────────────────────────── */
+.section-title {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+/* ── HERO ─────────────────────────────────────────────────── */
+.hero {
+  text-align: center;
+  padding: 80px 24px 60px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 8vw, 68px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero h1 .highlight {
+  color: #5a9fad;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 32px;
+}
+
+.hero-disclaimer {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 12px;
+}
+
+.hero-image {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  width: 560px;
+}
+
+
+/* ── WHY LORICA ───────────────────────────────────────────── */
+.why {
+  background: #f7f7f7;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: left;
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ── HOW IT WORKS ─────────────────────────────────────────── */
+.how {
+  padding: 80px 24px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.how .section-title {
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.step {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.step-num {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ddd;
+  line-height: 1;
+  min-width: 48px;
+}
+
+.step-body h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.step-body p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ── BUILT FOR PEOPLE WHO MOVE ────────────────────────────── */
+.personas {
+  background: #0f1117;
+  color: #fff;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.personas .section-title {
+  color: #fff;
+}
+
+.persona-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.persona-card {
+  text-align: center;
+}
+
+.persona-icon {
+  width: 52px;
+  height: 52px;
+  background: #1e2230;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 14px;
+}
+
+.persona-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.persona-card p {
+  font-size: 14px;
+  color: #9aa0b0;
+  line-height: 1.6;
+}
+
+/* ── CTA / FOOTER ─────────────────────────────────────────── */
+.cta {
+  background: #0f1117;
+  color: #fff;
+  padding: 80px 24px;
+  text-align: center;
+  border-top: 1px solid #1e2230;
+}
+
+.cta h2 {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  max-width: 480px;
+  margin: 0 auto 16px;
+  line-height: 1.2;
+}
+
+.cta p {
+  font-size: 15px;
+  color: #9aa0b0;
+  max-width: 480px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .step {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .step-num {
+    font-size: 24px;
+  }
+}
