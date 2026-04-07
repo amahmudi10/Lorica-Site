@@ -105,6 +105,63 @@
 
     /* reuse .cards / .card from styles.css */
 
+    /* ── DURABILITY ──────────────────────────────────────── */
+    .durability {
+      background: #f7f7f7;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .durability-sub {
+      font-size: 16px;
+      color: #555;
+      max-width: 520px;
+      margin: -28px auto 48px;
+      line-height: 1.7;
+    }
+
+    .durability-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 700px) {
+      .durability-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 420px) {
+      .durability-grid { grid-template-columns: 1fr; }
+    }
+
+    .durability-stat {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 20px;
+      text-align: left;
+    }
+
+    .durability-icon {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .durability-stat h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #111;
+    }
+
+    .durability-stat p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+    }
+
     /* ── INDUSTRIES ───────────────────────────────────────── */
     .industries {
       background: #0f1117;
@@ -197,7 +254,7 @@
   <section class="biz-hero">
     <p class="hero-eyebrow">Lorica for Business</p>
     <h1>Your team's hands are<br><span class="highlight">too valuable</span><br>to hold a phone.</h1>
-    <p>Lorica keeps your workforce connected, informed, and in control — without stopping what they're doing. Voice-controlled, phone-powered, built for the job.</p>
+    <p>Lorica is a rugged, wrist-worn device that keeps your workforce connected hands free — built to survive the environments your team actually works in. Voice-controlled, phone-powered, tough enough for the job.</p>
     <button class="btn-primary" id="biz-hero-cta-btn">Get in Touch</button>
     <div id="biz-hero-form-wrap" style="display:none;">
       <p class="form-success" id="biz-hero-form-success">Thanks — we'll be in touch.</p>
@@ -210,7 +267,7 @@
 
   <!-- ── PROBLEM ── -->
   <section class="problem">
-    <p>Every time a worker pulls out their phone, they lose focus, slow down, or create a safety risk. <span>Lorica eliminates that friction entirely.</span></p>
+    <p>Every time a worker pulls out their phone, they lose focus, slow down, or create a safety risk. Most wearables aren't built for real work — they scratch, break, and die by noon. <span>Lorica is built differently.</span></p>
   </section>
 
   <!-- ── BENEFITS ── -->
@@ -251,7 +308,52 @@
       <div class="card">
         <div class="card-icon">🛡️</div>
         <h3>Built Tough</h3>
-        <p>Engineered for real working conditions. Drops, weather, dust — Lorica is designed to survive the environments your team works in.</p>
+        <p>Drops, dust, rain, cold — Lorica is engineered for the job site, not the boardroom. Rugged enclosure, no fragile screen, no babysitting required.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── DURABILITY ── -->
+  <section class="durability">
+    <h2 class="section-title">Engineered for the real world</h2>
+    <p class="durability-sub">Most wearables are designed for the gym or the office. Lorica is designed for everything else.</p>
+    <div class="durability-grid">
+
+      <div class="durability-stat">
+        <span class="durability-icon">💧</span>
+        <h3>Weatherproof</h3>
+        <p>Rain, mud, spray — Lorica keeps working when conditions don't.</p>
+      </div>
+
+      <div class="durability-stat">
+        <span class="durability-icon">🪨</span>
+        <h3>Drop Resistant</h3>
+        <p>Rugged enclosure designed to take knocks, falls, and rough handling without failing.</p>
+      </div>
+
+      <div class="durability-stat">
+        <span class="durability-icon">🧤</span>
+        <h3>Glove Friendly</h3>
+        <p>No touchscreen. Voice only — works perfectly with gloves on, in the cold, or with dirty hands.</p>
+      </div>
+
+      <div class="durability-stat">
+        <span class="durability-icon">🌡️</span>
+        <h3>Extreme Conditions</h3>
+        <p>Engineered to operate across a wide temperature range — from construction sites to cold storage.</p>
+      </div>
+
+      <div class="durability-stat">
+        <span class="durability-icon">🔋</span>
+        <h3>2-Week Battery</h3>
+        <p>No mid-shift charging. No charging rotation. Two weeks on a single charge, consistently.</p>
+      </div>
+
+      <div class="durability-stat">
+        <span class="durability-icon">🔄</span>
+        <h3>Works Anywhere</h3>
+        <p>On scaffolding, in a warehouse, underground, offshore — if your phone has signal, Lorica works.</p>
       </div>
 
     </div>
