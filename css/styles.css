@@ -175,10 +175,22 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   max-width: 960px;
   margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card {
@@ -295,6 +307,20 @@ body {
   font-size: 14px;
   color: #9aa0b0;
   line-height: 1.6;
+}
+
+.persona-biz-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5a9fad;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.persona-biz-link:hover {
+  color: #fff;
 }
 
 /* ── CTA / FOOTER ─────────────────────────────────────────── */
