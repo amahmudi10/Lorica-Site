@@ -8,7 +8,7 @@ if (form) {
     var email = form.querySelector('input[type="email"]').value;
 
     // TODO: replace with your Formspree endpoint — https://formspree.io/f/YOUR_ID
-    fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+    fetch('https://formspree.io/f/xeepnkkz', {
       method: 'POST',
       headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: email })
